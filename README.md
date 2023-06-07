@@ -1,6 +1,6 @@
 # Deno KV Template
 
-This application is a starter template that uses [Fresh](https://fresh.deno.dev/) and [Deno KV](https://deno.com/kv) for persistence. Learn more about [building web applications with Fresh](https://fresh.deno.dev/docs/introduction), and about interacting with [Deno KV to store data](https://deno.com/manual/runtime/kv).
+This application is a starter template that uses [Fresh](https://fresh.deno.dev/) and [Deno KV](https://deno.com/kv) for persistence. [Check out a live demo here!](https://fresh-kv-example.deno.dev/) Learn more about [building web applications with Fresh](https://fresh.deno.dev/docs/introduction), and about interacting with [Deno KV to store data](https://deno.com/manual/runtime/kv).
 
 ## Running locally
 
