@@ -14,7 +14,7 @@ This will start the Fresh server, as configured in `deno.json` at the root of th
 
 ## Running on Deno Deploy
 
-To run this project in production, you will need access to the [Deno KV private beta on Deno Deploy](https://deno.com/manual/runtime/kv). Once you have access to Deno KV on Deploy, you can deploy this project like any other - you can [deploy using a GitHub integration](https://deno.com/deploy/docs/ci_github) if your app is pushed up to GitHub, or you can [deploy from the CLI using deployctl](https://deno.com/deploy/docs/deployctl) the commands below.
+To run this project in production, you will need access to the [Deno KV private beta on Deno Deploy](https://deno.com/manual/runtime/kv). Once you have access to Deno KV on Deploy, you can deploy this project like any other - you can [deploy using a GitHub integration](https://deno.com/deploy/docs/ci_github) if your app is pushed up to GitHub, or you can [deploy from the CLI using deployctl](https://deno.com/deploy/docs/deployctl) and the commands below.
 
 ```
 # Install the "deployctl" command line tool
