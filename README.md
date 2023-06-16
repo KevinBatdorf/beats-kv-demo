@@ -1,6 +1,6 @@
 # Deno KV Beats
 
-Created for the Deno KV Hackathon ([link](https://deno.com/blog/deno-kv-hackathon)).
+Created for the [Deno KV Hackathon](https://deno.com/blog/deno-kv-hackathon).
 
 ## What is it?
 
