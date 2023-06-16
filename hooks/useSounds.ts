@@ -13,13 +13,14 @@ export const useSounds = () => {
 
   const start = () => {
     isPlaying.value = true;
+    count.value = 0;
+    Tone.Transport.position = 0;
     Tone.start();
     Tone.Transport?.start();
   };
 
   const stop = () => {
     isPlaying.value = false;
-    count.value = 0;
     Tone.Transport?.stop();
   };
 

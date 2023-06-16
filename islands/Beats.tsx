@@ -54,9 +54,9 @@ export default function Beats() {
 
   return (
     <div className="flex flex-col gap-6 mt-6">
-      <h1 className="text-5xl text-center">Multiplayer KV beats</h1>
-      <div className="flex gap-6 flex-row-reverse relative -left-16">
-        <div className="flex flex-wrap text-7xl p-6 bg-[#272335] w-[368px] h-[368px]">
+      <h1 className="text-2xl md:text-5xl text-center">Multiplayer KV beats</h1>
+      <div className="flex gap-3 flex-row-reverse md:relative -left-12 mx-auto">
+        <div className="flex flex-wrap text-xl md:text-7xl p-6 bg-[#272335] w-[240px] h-[240px] md:w-[368px] md:h-[368px] shadow-md">
           {Object.keys(track ?? {}).map((k) => {
             const key = Number(k);
             return (
@@ -81,7 +81,7 @@ export default function Beats() {
             );
           })}
         </div>
-        <div className="flex flex-col gap-1 items-end justify-end">
+        <div className="md:flex flex-col gap-1 items-end justify-end">
           {soundNames.map((key) => (
             <div key={key}>
               <button
@@ -105,7 +105,7 @@ export default function Beats() {
               </button>
             </div>
           ))}
-          <div class="flex items-center justify-center relative -right-2">
+          <div class="md:flex items-center justify-center md:relative -right-1 mt-1">
             <PlayStop
               isPlaying={isPlaying}
               onClick={(isPlaying) => isPlaying ? start() : stop()}
