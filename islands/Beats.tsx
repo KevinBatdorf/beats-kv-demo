@@ -115,7 +115,7 @@ export default function Beats() {
       </div>
       <div class="p-4 flex justify-between gap-8 text-center font-sans">
         <a
-          href="https://github.com/KevinBatdorf/kv-beats-demo"
+          href="https://github.com/KevinBatdorf/beats-kv-demo"
           class="text-blue-500 hover:underline"
         >
           View Source on GitHub
