@@ -22,6 +22,7 @@ export default function Beats() {
     stop,
   } = useSounds();
   const [selectedSound, setSelectedSound] = useState<Sound | undefined>("bass");
+  const [showLoading, setShowLoading] = useState(false);
 
   const updateTrack = async (index: number, sounds: Sound[]) => {
     if (!track) return;
@@ -38,6 +39,14 @@ export default function Beats() {
       console.error("Failed to update");
     }
   };
+
+  useEffect(() => {
+    // If loading is taking more than 1.5 seconds, show the loading text
+    const id = setTimeout(() => {
+      setShowLoading(true);
+    }, 1_500);
+    return () => clearTimeout(id);
+  }, []);
 
   useEffect(() => {
     if (!loaded || !samples) return;
@@ -57,6 +66,13 @@ export default function Beats() {
       <h1 className="text-2xl md:text-5xl text-center">Multiplayer KV beats</h1>
       <div className="flex gap-3 flex-row-reverse md:relative -left-12 mx-auto">
         <div className="flex flex-wrap text-xl md:text-7xl p-6 bg-[#272335] w-[240px] h-[240px] md:w-[368px] md:h-[368px] shadow-md">
+          {Object.keys(track ?? {})?.length === 0 && showLoading
+            ? (
+              <span className="text-base text-white">
+                Loading track...
+              </span>
+            )
+            : null}
           {Object.keys(track ?? {}).map((k) => {
             const key = Number(k);
             return (
