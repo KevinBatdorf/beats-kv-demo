@@ -1,6 +1,6 @@
 # Deno KV Beats
 
-Created for the [Deno KV Hackathon](https://deno.com/blog/deno-kv-hackathon). Find me on [Twitter](https://twitter.com/kevinbatdorf)
+Created for the [Deno KV Hackathon](https://deno.com/blog/deno-kv-hackathon) (although I submitted it late, so the project wasn't considered). Find me on [Twitter](https://twitter.com/kevinbatdorf)
 
 ## What is it?
 
