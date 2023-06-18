@@ -97,7 +97,7 @@ export default function Beats() {
             );
           })}
         </div>
-        <div className="md:flex flex-col gap-1 items-end justify-end">
+        <div className="flex flex-col gap-0.5 md:gap-1 items-end justify-end">
           {soundNames.map((key) => (
             <div key={key}>
               <button
@@ -129,7 +129,7 @@ export default function Beats() {
           </div>
         </div>
       </div>
-      <div class="p-4 flex justify-between gap-8 text-center font-sans">
+      <div class="p-4 flex flex-col md:flex-row md:justify-between gap-2 md:gap-8 text-center font-sans">
         <a
           href="https://github.com/KevinBatdorf/beats-kv-demo"
           class="text-blue-500 hover:underline"
