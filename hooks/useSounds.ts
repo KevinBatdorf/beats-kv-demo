@@ -61,6 +61,7 @@ export const useSounds = () => {
     count: count.value,
     track: track.value,
     isPlaying: isPlaying.value,
+    loading: !samples.value,
     addSamples: (s: SampleRecord) => samples.value = s,
     updateTrack,
     updateTracks,
